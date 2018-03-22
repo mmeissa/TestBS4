@@ -19,4 +19,18 @@ $(document).ready(function(){
            $("#carousel-button").children("span").addClass('fa-pause');
        }
    });
+
+// Task 2 show hide the modals
+//I used toggle paramter instead of modal paramter so that in case the displayed modal
+//dose not have a way to hide itself, clicking the button or link again will hide the modal
+
+   $("#show-login").click(function () {
+     $('#loginModal').modal('toggle');
+   });
+
+   $("#show-reserve").click(function () {
+     $('#reserveform').modal('toggle');
+   });
+
+
 });

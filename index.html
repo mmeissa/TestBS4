@@ -38,8 +38,10 @@
             <li class="nav-item"> <a href="./contactus.html" class="nav-link"><span class="fa fa-address-card fa-lg"></span> Contact</a> </li>
           </ul>
           <span class="navbar-text">
-            <a data-toggle="modal" data-target="#loginModal">
-            <span class="fa fa-sign-in"></span> Login</a>
+            <!-- Task 1 removed the data attributes original before modification: <a data-toggle="modal" data-target="#loginModal"> -->
+            <a id="show-login">
+              <span class="fa fa-sign-in"></span> Login
+            </a>
           </span>
         </div>
       </div>
@@ -159,8 +161,9 @@
 
                 <div class="col-sm align-self-center">
                   <!-- Button toggleing the reservation form modal -->
-                  <a type="button" class="btn btn-warning btn-sm btn-block" data-toggle="modal"
-                  data-target="#reserveform" href="#">Reserve</a>
+                  <!-- Task 1 removed the data attributes original before modification: <a type="button" class="btn btn-warning btn-sm btn-block" data-toggle="modal" data-target="#reserveform" href="#"> -->
+                  <a id="show-reserve" type="button" class="btn btn-warning btn-sm btn-block" href="#">
+                    Reserve</a>
                 </div>
             </div>
         </div>
